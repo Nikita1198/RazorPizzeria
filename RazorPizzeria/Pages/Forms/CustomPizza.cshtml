@@ -1,0 +1,77 @@
+﻿@page
+@model RazorPizzeria.Pages.Forms.CustomPizzaModel
+@{
+}
+<div class="mainText text-center">
+    <h1 class="display-4 text-capitalize text-black">Create Your Own Pizza!</h1>
+</div>
+
+<div class="align-content-center container">
+ 
+    <div class="card m-5 p-5 pb-3 rounded-10 " style="background-color:lightgrey">
+        <div class="card-body ">
+
+            <form method="post">
+                <div class="row mb-3">
+                    <div class="col-sm-10 offset-sm-1">
+                        <input type="text" id="pizzaName" class="form-control" asp-for="Pizza.PizzaName" aria-describedby="nameHelp" placeholder="Enter Pizza Name" />
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-sm-10 offset-sm-1">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" asp-for="Pizza.TomatoSouse" id="tomatoSouse" placeholder="Tomato Souse" />
+                            <label for="tomatoSouse" class="form-check-label">Tomato Souse</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-10 offset-sm-1">
+                        <div class="form-check">
+                            <label class="form-check-label" for="beef">Beef</label>
+                            <input class="form-check-input" type="checkbox" asp-for="Pizza.Beef" id="beef" placeholder="Beef" />
+                        </div>
+                    </div>
+                    <div class="col-sm-10 offset-sm-1">
+                        <div class="form-check">
+                            <label class="form-check-label" for="ham">Ham</label>
+                            <input class="form-check-input" type="checkbox" asp-for="Pizza.Ham" id="ham" placeholder="Ham" />
+                        </div>
+                    </div>
+                    <div class="col-sm-10 offset-sm-1">
+                        <div class="form-check">
+                            <label class="form-check-label" for="mushroom">Mushroom</label>
+                            <input class="form-check-input" type="checkbox" asp-for="Pizza.Mushroom" id="ham" placeholder="Mushroom" />
+                        </div>
+                    </div>
+                    <div class="col-sm-10 offset-sm-1">
+                        <div class="form-check">
+                            <label class="form-check-label" for="mushroom">Peperoni</label>
+                            <input class="form-check-input" type="checkbox" asp-for="Pizza.Peperoni" id="ham" placeholder="Peperoni" />
+                        </div>
+                    </div>
+                    <div class="col-sm-10 offset-sm-1">
+                        <div class="form-check">
+                            <label class="form-check-label" for="mushroom">Tuna</label>
+                            <input class="form-check-input" type="checkbox" asp-for="Pizza.Tuna" id="ham" placeholder="Tuna" />
+                        </div>
+                    </div>
+                    <div class="col-sm-10 offset-sm-1">
+                        <div class="form-check">
+                            <label class="form-check-label" for="mushroom">Cheese</label>
+                            <input class="form-check-input" type="checkbox" asp-for="Pizza.Cheese" id="ham" placeholder="Cheese" />
+                        </div>
+                    </div>
+                    <div class="col-sm-10 offset-sm-1">
+                        <div class="form-check">
+                            <label class="form-check-label" for="mushroom">Pineapple</label>
+                            <input class="form-check-input" type="checkbox" asp-for="Pizza.Pineapple" id="ham" placeholder="Pineapple" />
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center pt-4">
+                    <button class="btn btn-primary mt-1" type="submit">Order My Pizza!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
